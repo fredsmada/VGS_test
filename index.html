@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Sample Test Form</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+        <style type="text/css">
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Baloo, sans-serif;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: h
+        body > div {
+            margin: 5vh 5vw;
+            text-align: center;
+            font-size: 5vh;
+        }
+        h1 {
+            font-size: 2.4em;
+            margin: 5vh 0 5vh;
+        }
+        p {
+            margin: 5vh 0 5vh;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: hsla(79, 97%, 47%, 1);
+            text-decoration: underline;
+        }
+        .small {
+            font-size: .6em;
+        }
+        #test input,label {
+            margin-bottom:5px !important;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Sample Form</h1>
+            <form id="test" method="post">
+                <label>Credit Card #: </label><input type="text" id="cc" name="cc" placeholder="CC Number" style="width:150px;"/><br>
+                <label>Expiration Date: </label><input type="text" id="exp" name="exp" placeholder="MM/YY" style="width:60px;"/><br>
+                <label>CVV Code: </label><input type="text" id="cvv" name="cvv" style="width:60px;" /><br>
+                <input type="submit" name="submit" id="sub"/>
+            </form>
+        </div>
+    </body>
+</html>
